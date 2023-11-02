@@ -1,0 +1,78 @@
+@import "assets\styles\styles.css";
+/* Input and Textarea base style */
+.input-style,
+.textarea-style {
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    border: 1px solid var(--border-color);
+    width: 100%;
+    /* Full-width inputs */
+    box-sizing: border-box;
+    /* To ensure padding doesn't affect overall width */
+    font-family: inherit;
+    /* To keep font consistent with the rest of the design */
+}
+/* Specific styles for input */
+.input-style {
+    height: 40px;
+    /* Fixed height for input fields */
+}
+
+/* Specific styles for textarea */
+.textarea-style {
+    height: 150px;
+    /* Larger fixed height for text areas */
+    resize: vertical;
+    /* Allows the user to resize the textarea vertically */
+}
+
+/* Focus styles to highlight input/textarea when active */
+.input-style:focus,
+.textarea-style:focus {
+    outline: none;
+    border-color: var(--accent-color);
+    box-shadow: 0 0 0 2px rgba(var(--accent-color), 0.2);
+    /* Adjust for your color palette */
+}
+
+/* Placeholder style */
+::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: var(--secondary-text-color);
+    opacity: 1;
+    /* Firefox */
+}
+
+:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: var(--secondary-text-color);
+}
+
+::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: var(--secondary-text-color);
+}
+/* Responsive styles */
+@media (max-width: 768px) {
+
+    .input-style,
+    .textarea-style {
+        max-width: 500px;
+        /* adjust this value based on your preference */
+    }
+
+    .label-style {
+        width: 100%;
+        /* full width on smaller screens */
+        max-width: 500px;
+        /* adjust as needed */
+    }
+}
+
+/* Label base style */
+.label-style {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0.5rem;
+}
+

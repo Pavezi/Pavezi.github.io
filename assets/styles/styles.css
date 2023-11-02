@@ -26,8 +26,8 @@ body {
 }
 
 header {
-    background-color: var(--primary-color);
-    color: var(--background-color);
+    background-color: var(--background-color);
+    color: var(--accent-color);
     /* Switched to eggshell for contrast */
 }
 
@@ -67,34 +67,6 @@ footer a {
 
 footer a:hover {
     text-decoration: underline;
-}
-
-@media (max-width: 768px) {
-    main {
-        padding: 1rem;
-    }
-
-    #contact form {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    #contact label {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        /* Makes sure the label takes the full width */
-    max-width: 500px;
-    /* adjust this value based on your preference */
-}
-
-#contact input,
-#contact textarea,
-#contact button {
-    width: 100%;
-    /* They will take the full width of their parent (the label or form) */
-}
 }
 
 .center-content {
